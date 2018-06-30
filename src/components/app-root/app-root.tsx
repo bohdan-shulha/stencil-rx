@@ -15,12 +15,9 @@ export class AppRoot {
         </header>
 
         <main>
-          <stencil-router>
-            <stencil-route-switch scrollTopOffset={0}>
-              <stencil-route url='/' component='app-home' exact={true} />
-              <stencil-route url='/profile/:name' component='app-profile' />
-            </stencil-route-switch>
-          </stencil-router>
+          <p>This is a proof-of-concept targeted to integrate Stencil with Rx by using supersimple interface.</p>
+
+          <rx-demo />
         </main>
       </div>
     );

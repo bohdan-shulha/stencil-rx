@@ -25,78 +25,6 @@ declare global {
   interface HTMLAttributes {}
 }
 
-import '@stencil/router';
-import '@stencil/state-tunnel';
-
-import {
-  MatchResults,
-} from '@stencil/router';
-
-declare global {
-
-  namespace StencilComponents {
-    interface AppHome {
-
-    }
-  }
-
-  interface HTMLAppHomeElement extends StencilComponents.AppHome, HTMLStencilElement {}
-
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
-  };
-  interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
-  }
-  interface ElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'app-home': JSXElements.AppHomeAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface AppHomeAttributes extends HTMLAttributes {
-
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
-    interface AppProfile {
-      'match': MatchResults;
-    }
-  }
-
-  interface HTMLAppProfileElement extends StencilComponents.AppProfile, HTMLStencilElement {}
-
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
-  };
-  interface HTMLElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
-  }
-  interface ElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'app-profile': JSXElements.AppProfileAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface AppProfileAttributes extends HTMLAttributes {
-      'match'?: MatchResults;
-    }
-  }
-}
-
 
 declare global {
 
@@ -125,6 +53,39 @@ declare global {
   }
   namespace JSXElements {
     export interface AppRootAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface RxDemo {
+
+    }
+  }
+
+  interface HTMLRxDemoElement extends StencilComponents.RxDemo, HTMLStencilElement {}
+
+  var HTMLRxDemoElement: {
+    prototype: HTMLRxDemoElement;
+    new (): HTMLRxDemoElement;
+  };
+  interface HTMLElementTagNameMap {
+    'rx-demo': HTMLRxDemoElement;
+  }
+  interface ElementTagNameMap {
+    'rx-demo': HTMLRxDemoElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'rx-demo': JSXElements.RxDemoAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface RxDemoAttributes extends HTMLAttributes {
 
     }
   }
